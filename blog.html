@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Field Notes · MacKerricher</title>
+  <meta name="description" content="Field notes on AI delivery, math-powered tooling, and research practices from MacKerricher." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/png" sizes="48x48" href="favicon.png" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page-shell">
+    <header class="site-header">
+      <div class="brand">
+        <img src="logo.png" alt="MacKerricher logo" class="brand-mark" width="55" height="55" loading="lazy" />
+        <div class="wordmark">
+          <span class="brand-name">MacKerricher</span>
+          <span class="brand-tagline">Software &amp; AI Integration</span>
+        </div>
+      </div>
+      <nav class="site-nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="index.html#contact" class="button ghost">Book a call</a>
+      </nav>
+    </header>
+
+    <main class="blog-main">
+      <section class="blog-hero">
+        <p class="eyebrow">Field notes</p>
+      </section>
+
+      <section class="post-listing">
+        <ul class="post-list">
+          <li>
+            <a href="blog-solo-founder-ai.html">
+              <span class="eyebrow">Solo founder systems</span>
+              <h2>Building an AI "team" when you're the only full-timer</h2>
+            </a>
+          </li>
+          <li>
+            <a href="blog-quiet-frontier.html">
+              <span class="eyebrow">Research practice</span>
+              <h2>The Quiet Frontier: Synthesizing Math, AI, and Rust</h2>
+            </a>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>© <span id="year"></span> MacKerricher</span>
+      <span>Custom software &amp; AI integration</span>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

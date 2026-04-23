@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>The Quiet Frontier: Synthesizing Math, AI, and Rust · MacKerricher</title>
+  <meta name="description" content="How I pair reasoning models with Rust prototypes to discover contrarian AI optimization techniques." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/png" sizes="48x48" href="favicon.png" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page-shell">
+    <header class="site-header">
+      <div class="brand">
+        <img src="logo.png" alt="MacKerricher logo" class="brand-mark" width="55" height="55" loading="lazy" />
+        <div class="wordmark">
+          <span class="brand-name">MacKerricher</span>
+          <span class="brand-tagline">Software &amp; AI Integration</span>
+        </div>
+      </div>
+      <nav class="site-nav">
+        <a href="blog.html" class="nav-link">Back to blog</a>
+        <a href="index.html#contact" class="button ghost">Book a call</a>
+      </nav>
+    </header>
+
+    <main class="blog-main">
+      <article class="post-card">
+        <p class="eyebrow">Research practice</p>
+        <h1>The Quiet Frontier: Synthesizing Math, AI, and Rust</h1>
+        <p>
+          Most AI discourse feels like a crowded room where everyone is squeezing a few extra drops from the same optimizer. We tune hyperparameters, nudge transformer blocks, and celebrate fractional gains. Useful work, but diminishing returns. Smaller teams—and solo researchers—cannot win a compute arms race. We have to win the architecture race, which means reaching back into pure mathematics and inventing new conjectures that reshape how models learn.
+        </p>
+        <p>
+          Reasoning models give us a humble advantage: they can hold entire branches of math in their latent space at once. That opens a quiet frontier for discovering genuinely novel optimization techniques if we guide them well.
+        </p>
+
+        <h2>The latent space of unlikely pairs</h2>
+        <p>
+          The research brief starts by mapping the voids, not the known results. I prompt a top-tier reasoning model to surface mathematical fields that ought to help with high-dimensional, non-convex problems yet remain ignored by mainstream deep learning. Then I force a constraint: pair two rarely connected domains and demand a conjecture that bridges them.
+        </p>
+        <p>
+          When the model has to reconcile Spectral Graph Theory with non-Euclidean geometry, or tie p-adic analysis to fluid dynamics, it can’t simply regurgitate arXiv. It has to reason at the edge of its capabilities, generating contrarian, often strange conjectures that hint at new ways to traverse loss landscapes.
+        </p>
+
+        <h2>The crucible of code: why Rust is the filter</h2>
+        <p>
+          Beautiful conjectures are useless if they collapse under their own weight. Every theoretical leap has to survive implementation. I make it a strict requirement that each proposed idea ships with a complete, benchmarked Rust prototype.
+        </p>
+        <p>
+          Rust matters because the compiler behaves like a first peer reviewer:
+        </p>
+        <ul>
+          <li><strong>Performance.</strong> Zero-cost abstractions let me test whether a concept can outrun Adam or SGD without Python overhead.</li>
+          <li><strong>Precision.</strong> Ownership and strict typing force the model to be explicit about memory and concurrency; there is no room for hand-waving.</li>
+          <li><strong>Benchmarking.</strong> Criterion-based harnesses drop right in, so every run ships with a measurable comparison against familiar baselines.</li>
+        </ul>
+
+        <h2>The loop</h2>
+        <p>
+          The workflow becomes a tight, automated cycle:
+        </p>
+        <ol class="post-steps">
+          <li><strong>Generate.</strong> Prompt the LLM to propose a contrarian mathematical conjecture that pairs two obscure fields.</li>
+          <li><strong>Translate.</strong> Force it to write a rigorous, safe Rust implementation of the proposed optimizer.</li>
+          <li><strong>Test.</strong> Compile the script and benchmark it against standard datasets and baseline optimizers.</li>
+          <li><strong>Iterate.</strong> Feed the benchmark times and loss curves back into the model. If the idea fails—or runs too slowly—the conjecture must evolve before we try again.</li>
+        </ol>
+        <p>
+          Most experiments fail. The math collapses or the computation is too expensive. But because the iteration happens in fast, compiled code instead of slow, manual translation, we can test hundreds of these bizarre, beautiful theories in a day.
+        </p>
+        <p>
+          It is a quiet, incredibly leveraged way to conduct fundamental AI research. I am not just writing code; I am directing an automated laboratory of pure mathematics, searching for the one strange equation that changes everything.
+        </p>
+        <p>
+          Interested in running your own version of this loop? I’m happy to share the precise prompt I use to kick off the “disparate math field” generation whenever you’re ready.
+        </p>
+      </article>
+    </main>
+
+    <footer class="site-footer">
+      <span>© <span id="year"></span> MacKerricher</span>
+      <span>Custom software &amp; AI integration</span>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

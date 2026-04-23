@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Building an AI "team" when you're the only full-timer · MacKerricher</title>
+  <meta name="description" content="Notes on structuring AI teammates for solo founders, expanded from David Ames' LinkedIn posts." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/png" sizes="48x48" href="favicon.png" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page-shell">
+    <header class="site-header">
+      <div class="brand">
+        <img src="logo.png" alt="MacKerricher logo" class="brand-mark" width="55" height="55" loading="lazy" />
+        <div class="wordmark">
+          <span class="brand-name">MacKerricher</span>
+          <span class="brand-tagline">Software &amp; AI Integration</span>
+        </div>
+      </div>
+      <nav class="site-nav">
+        <a href="blog.html" class="nav-link">Back to blog</a>
+        <a href="index.html#contact" class="button ghost">Book a call</a>
+      </nav>
+    </header>
+
+    <main class="blog-main">
+      <article class="post-card">
+        <p class="eyebrow">Solo founder systems</p>
+        <h1>Small Systems, Big Aspirations: A Solo Founder’s AI Team on a Mac Mini</h1>
+        <p>
+          Being a solo founder means wearing every hat. In the early days you are the CEO, the lead developer, the marketing manager, and customer support. It’s exhilarating and often overwhelming. Time becomes the most precious asset, and leverage is the only path to meaningful growth.
+        </p>
+        <p>
+          The typical narrative is to “scale up” by hiring people. That eventually matters, but there is another, quieter option: moving from doing every task yourself to orchestrating systems. Instead of employees, you nurture intelligent, automated processes. My small, capable shadow team runs on a humble Mac Mini.
+        </p>
+        <p>
+          This is a quiet revolution for single-person businesses. Instead of adding overhead, you add agents that help you build, communicate, and plan. Here’s how that looks in my studio.
+        </p>
+
+        <h2>The power of local: OpenClaw and the Mac Mini</h2>
+        <p>
+          I use an Apple Mac Mini as a localized hub. It’s compact, energy-efficient, and powerful enough for development and for running a local AI system. OpenClaw, an open-source framework for on-device agents, lets me define capabilities and keep everything close to my data.
+        </p>
+        <p>
+          Working locally gives me control, privacy, and manageable costs. Instead of piping every idea through distant APIs, I run focused assistants on my own hardware. They are quiet teammates who sit on the corner of the desk.
+        </p>
+
+        <h2>Building the team: specialized agents &amp; tools</h2>
+        <p>
+          We do not need general artificial intelligence; we need dependable help with tedious, repeatable tasks. The goal is to offload the predictable so the creative work stays human.
+        </p>
+
+        <h3>1. The Developer and Vercel</h3>
+        <p>
+          Shipping the web presence cannot consume entire weeks, so a web-focused developer agent drafts landing pages, tweaks copy, and implements simple interactive pieces. It works inside its own environment and, once I approve the changes, deploys via Vercel’s CLI. Preview links arrive in seconds, and pushing to production becomes a calm, two-command ritual.
+        </p>
+
+        <h3>2. The Communicator and Fastmail</h3>
+        <p>
+          Outreach and support deserve thoughtful replies even when my inbox is full. A communication agent crafts considered messages using the context from surveys, support threads, or partnership leads. It connects to Fastmail via the JMAP-friendly API, sending sequences, managing segments, and handling first-line support without letting the tone slip.
+        </p>
+
+        <h3>3. The Planner and Linear</h3>
+        <p>
+          A product roadmap is easy to ignore when you’re putting out fires. An operations agent keeps Linear organized, nudges me when experiments are drifting, and synthesizes what happened last week. It’s a steadying influence that keeps ambition aligned with the calendar.
+        </p>
+        <p>
+          When an idea surfaces mid-conversation, I tell OpenClaw. The same agent creates a detailed ticket in Linear, prioritizes it, and updates the sprint plan. By integrating with Linear’s API, it shows me what matters most without forcing me to micromanage a complex board. It is not perfect, but it feels like an understated project manager who never gets tired.
+        </p>
+
+        <h2>Putting it all together: the workflow</h2>
+        <p>
+          The resulting system looks less like “I am doing all the work” and more like “I am directing the effort.” A typical interaction might look like this: I spend the morning thinking about a new feature and the related feedback, then say, <em>“We need a landing page for Advanced Integrations, draft a clear, focused layout, and push it to a Vercel preview.”</em> OpenClaw routes that to the developer agent, which goes to work. Later, I’ll ask the communication agent, <em>“Draft a warm, personal update for our beta users about this, and send via Fastmail.”</em>
+        </p>
+        <p>
+          My job has shifted from direct implementation to high-level planning, defining requirements, and reviewing output. The AI does not work perfectly every time and that is fine—it requires fine-tuning, but the feeling is different. I am building a system, and the Mac Mini is its engine. It is not a replacement for human judgment or creativity, but a reliable extension of my own capabilities.
+        </p>
+        <p>
+          This journey is just beginning. It is an exploration of building smart, small, and sustainable businesses. For solo founders, it offers a way to scale as one: achieving a large presence without a large operation. It takes patience and experimentation, but the quiet, compounding benefits are worth it.
+        </p>
+      </article>
+    </main>
+
+    <footer class="site-footer">
+      <span>© <span id="year"></span> MacKerricher</span>
+      <span>Custom software &amp; AI integration</span>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
