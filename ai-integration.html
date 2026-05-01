@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MacKerricher · The Single-AI Integration</title>
+  <meta name="description" content="We wire your entire business into one AI that knows everything. CRM, email, docs, inventory, support — one interface, one system." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/png" sizes="48x48" href="/favicon.png" />
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .offer-hero {
+      text-align: center;
+      padding: 80px 24px 60px;
+      max-width: 720px;
+      margin: 0 auto;
+    }
+    .offer-hero h1 { font-size: 2.5em; line-height: 1.15; margin-bottom: 20px; }
+    .offer-hero .lead { font-size: 1.2em; color: #94a3b8; line-height: 1.7; }
+    .offer-badge {
+      display: inline-block;
+      padding: 6px 16px;
+      background: rgba(59,130,246,0.1);
+      border: 1px solid rgba(59,130,246,0.2);
+      border-radius: 20px;
+      font-size: 0.85em;
+      color: #93c5fd;
+      margin-bottom: 24px;
+    }
+    .problem-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 0 24px 80px;
+    }
+    .problem-card {
+      padding: 24px;
+      background: rgba(30,41,59,0.5);
+      border: 1px solid rgba(148,163,184,0.08);
+      border-radius: 12px;
+    }
+    .problem-card .icon { font-size: 1.5em; margin-bottom: 12px; }
+    .problem-card h3 { font-size: 1.1em; margin-bottom: 8px; }
+    .problem-card p { color: #94a3b8; font-size: 0.9em; line-height: 1.6; }
+    .how-section {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 0 24px 80px;
+    }
+    .how-section h2 { text-align: center; font-size: 2em; margin-bottom: 48px; }
+    .timeline { display: flex; flex-direction: column; gap: 32px; }
+    .timeline-step { display: flex; gap: 20px; align-items: flex-start; }
+    .step-number {
+      min-width: 48px; height: 48px;
+      background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-weight: 700; font-size: 1.2em;
+    }
+    .step-content h3 { font-size: 1.15em; margin-bottom: 4px; }
+    .step-content p { color: #94a3b8; font-size: 0.9em; line-height: 1.6; }
+    .pricing-grid {
+      display: flex;
+      justify-content: center;
+      gap: 24px;
+      flex-wrap: wrap;
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 0 24px 80px;
+    }
+    .pricing-card {
+      width: 300px;
+      padding: 32px;
+      background: rgba(30,41,59,0.5);
+      border: 1px solid rgba(148,163,184,0.1);
+      border-radius: 16px;
+      text-align: center;
+    }
+    .pricing-card.featured { border-color: rgba(139,92,246,0.4); }
+    .pricing-card h3 { font-size: 1.3em; margin-bottom: 8px; }
+    .pricing-card .price { font-size: 2.5em; font-weight: 800; margin: 16px 0 4px; }
+    .pricing-card .period { color: #64748b; font-size: 0.9em; margin-bottom: 20px; }
+    .pricing-card ul { text-align: left; list-style: none; font-size: 0.9em; line-height: 2; color: #94a3b8; }
+    .faq { max-width: 700px; margin: 0 auto; padding: 0 24px 80px; }
+    .faq h2 { text-align: center; font-size: 2em; margin-bottom: 40px; }
+    .faq-item { margin-bottom: 24px; }
+    .faq-item h3 { font-size: 1.05em; margin-bottom: 6px; }
+    .faq-item p { color: #94a3b8; font-size: 0.9em; line-height: 1.6; }
+    .cta-section { text-align: center; padding: 60px 24px 100px; }
+    .cta-section h2 { font-size: 2em; margin-bottom: 16px; }
+    .cta-section p { color: #94a3b8; margin-bottom: 32px; }
+    .cta-buttons { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+  </style>
+</head>
+<body>
+  <div class="page-shell">
+    <header class="site-header">
+      <div class="brand">
+        <img src="logo.png" alt="MacKerricher logo" class="brand-mark" width="55" height="55" loading="lazy" />
+        <div class="wordmark">
+          <span class="brand-name">MacKerricher</span>
+          <span class="brand-tagline">AI Systems Integration</span>
+        </div>
+      </div>
+      <nav class="site-nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="blog.html" class="nav-link">Blog</a>
+        <a href="#contact" class="button ghost">Schedule a call</a>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Hero -->
+      <section class="offer-hero">
+        <div class="offer-badge">New offering — limited slots</div>
+        <h1>Your entire business.<br>One AI. One conversation.</h1>
+        <p class="lead">
+          We wire your CRM, email, docs, inventory, support tickets, and internal tools into a single AI interface that knows everything. Ask it anything. It answers from your data — not the internet.
+        </p>
+      </section>
+
+      <!-- The problem -->
+      <div class="problem-grid">
+        <div class="problem-card">
+          <div class="icon">🔧</div>
+          <h3>Your team lives in 7 different tabs</h3>
+          <p>CRM in one window. Email in another. Docs somewhere else. Support tickets in a fourth. Nobody has the full picture.</p>
+        </div>
+        <div class="problem-card">
+          <div class="icon">⏳</div>
+          <h3>"Let me look that up" costs you hours</h3>
+          <p>Every question about a customer, order, or process means someone stops what they're doing and digs through systems.</p>
+        </div>
+        <div class="problem-card">
+          <div class="icon">🧩</div>
+          <h3>Generic AI doesn't know your business</h3>
+          <p>ChatGPT can't access your inventory. Claude doesn't know your customer history. They're brilliant — but blind to your operations.</p>
+        </div>
+        <div class="problem-card">
+          <div class="icon">💰</div>
+          <h3>You're paying for software nobody uses</h3>
+          <p>Complex dashboards, bloated ERP systems, tools with 90% unused features. Your team ignores them and uses spreadsheets instead.</p>
+        </div>
+        <div class="problem-card">
+          <div class="icon">🔄</div>
+          <h3>Data entry is duplicated across systems</h3>
+          <p>Same customer info entered in CRM, billing, support, and shipping. Four data entries. One customer. Human error compounds.</p>
+        </div>
+        <div class="problem-card">
+          <div class="icon">📉</div>
+          <h3>Institutional knowledge leaves when people do</h3>
+          <p>When your operations manager quits, their knowledge of how everything connects walks out the door with them.</p>
+        </div>
+      </div>
+
+      <!-- How it works -->
+      <section class="how-section">
+        <h2>How we do it</h2>
+        <div class="timeline">
+          <div class="timeline-step">
+            <div class="step-number">1</div>
+            <div class="step-content">
+              <h3>Discovery Session (1–2 hours)</h3>
+              <p>We walk through your business together. What systems do you use? What questions does your team ask 20 times a day? Where does information live? I map your entire operation on a whiteboard.</p>
+            </div>
+          </div>
+          <div class="timeline-step">
+            <div class="step-number">2</div>
+            <div class="step-content">
+              <h3>Integration Architecture (2–5 days)</h3>
+              <p>I build the pipelines that connect your systems — APIs, webhooks, database queries, document ingestion. All your data flows into a unified knowledge layer. Nothing is duplicated. Everything stays in sync.</p>
+            </div>
+          </div>
+          <div class="timeline-step">
+            <div class="step-number">3</div>
+            <div class="step-content">
+              <h3>AI Training & Deployment (3–7 days)</h3>
+              <p>Your AI learns your business. I tune the retrieval, prompts, and guardrails so it answers accurately from YOUR data — customer history, inventory levels, order status, internal procedures. You get a private chat interface. Your team starts using it.</p>
+            </div>
+          </div>
+          <div class="timeline-step">
+            <div class="step-number">4</div>
+            <div class="step-content">
+              <h3>Iteration & Handoff (ongoing)</h3>
+              <p>We watch what questions the team asks. We refine. The AI gets smarter. After 2–4 weeks, you have a system that answers 80%+ of operational questions instantly — and a partner who knows your stack.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Pricing -->
+      <h2 style="text-align:center;font-size:2em;margin:40px 0;">Engagement Options</h2>
+      <div class="pricing-grid">
+        <div class="pricing-card">
+          <h3>Discovery & Roadmap</h3>
+          <div class="price">$2,500</div>
+          <div class="period">one-time</div>
+          <ul>
+            <li>Full systems audit (2 hrs)</li>
+            <li>Integration architecture document</li>
+            <li>Priority use cases ranked by ROI</li>
+            <li>Implementation roadmap</li>
+            <li>Deliverable in 3 business days</li>
+          </ul>
+        </div>
+        <div class="pricing-card featured">
+          <h3>Full Integration</h3>
+          <div class="price">$15K–$35K</div>
+          <div class="period">per engagement</div>
+          <ul>
+            <li>Everything in Discovery</li>
+            <li>Up to 5 systems integrated</li>
+            <li>Custom AI interface for your team</li>
+            <li>Prompt architecture & guardrails</li>
+            <li>4 weeks of iteration & training</li>
+            <li>Ongoing support available</li>
+          </ul>
+        </div>
+        <div class="pricing-card">
+          <h3>Ongoing Partnership</h3>
+          <div class="price">$3K–$8K</div>
+          <div class="period">/month</div>
+          <ul>
+            <li>Continuous AI improvement</li>
+            <li>New system integrations as needed</li>
+            <li>Monthly strategy sessions</li>
+            <li>Priority support within 4 hours</li>
+            <li>Your dedicated AI systems partner</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- FAQ -->
+      <div class="faq">
+        <h2>Common Questions</h2>
+        <div class="faq-item">
+          <h3>What systems can you integrate?</h3>
+          <p>Anything with an API or database: Salesforce, HubSpot, Zendesk, Shopify, QuickBooks, Google Workspace, Microsoft 365, custom internal tools, SQL databases, spreadsheets, email, Slack, and more. If it stores data, we can connect it.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Is my data secure?</h3>
+          <p>Your data stays in your systems. The AI queries your data on-demand — we don't store copies or train models on your information. We can deploy entirely within your infrastructure if needed.</p>
+        </div>
+        <div class="faq-item">
+          <h3>How long until we see value?</h3>
+          <p>Most clients have a working prototype within 2 weeks. The Discovery session alone usually identifies quick wins you can implement immediately. Full integration typically delivers measurable ROI within the first month.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Do we need technical staff to maintain this?</h3>
+          <p>No. The system is designed to be used by your existing team through a simple chat interface. We handle all technical maintenance. If you have engineers, they can extend the system — but you don't need them.</p>
+        </div>
+      </div>
+
+      <!-- CTA -->
+      <section class="cta-section" id="contact">
+        <h2>Ready to see what your business looks like through one AI?</h2>
+        <p>Book a 30-minute call. We'll map your systems together and identify the highest-impact integration for your team.</p>
+        <div class="cta-buttons">
+          <a href="tel:+15592202014" class="button primary" style="font-size:1.1em;padding:16px 32px;">Call (559) 220-2014</a>
+          <a href="mailto:david@mackerricher.com" class="button" style="font-size:1.1em;padding:16px 32px;">david@mackerricher.com</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>© <span id="year"></span> MacKerricher</span>
+      <span>AI Systems Integration · Hanford, CA</span>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
